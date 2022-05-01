@@ -1,0 +1,34 @@
+1. Only change L1_mccdma.c. Put your code between: 
+	
+	//***Student_code_start*** 
+	//    Your code...
+	//    ...
+        //    ...
+	//***Student_code_end*****
+
+   Don't change other code.
+
+2. You need to write following function:
+
+	void pn_generator(char* pnSequence, int len)	
+
+	int generate_symbols_mccdma(unsigned char* txBits, int bitsPerSymbol,
+		int howManySymbols, int spreadFactor, double* txSymI, double* txSymQ)
+
+	void spread_symbols(double* sigI, double* sigQ, char* pnSeq, int len)
+
+	void decode_symbols_mccdma(double* rxSymI, double* rxSymQ, int howManySymbols,
+
+
+3. Please make sure you have the latest version of "gcc"
+
+4. Compile with command line:
+	make
+
+5. Excute with command line.
+	./L1_mccdma 2 5000 8
+   E.g.: 2 means QPSK. 5000 is blocknumber, more takes more time but more accurated. 8 is spreadFactor.
+   Your result will store in a .txt file in result folder.
+
+6. Plot your graph with any tools you like(e.g. Python ...)
+
